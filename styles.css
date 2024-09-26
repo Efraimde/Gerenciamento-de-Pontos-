@@ -1,0 +1,79 @@
+/* Estilos gerais */
+body {
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #343a40;
+    margin-bottom: 20px;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Lista de pontos */
+#pontoList {
+    margin-top: 20px;
+    list-style-type: none;
+    padding: 0;
+}
+
+#pontoList li {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para os detalhes do ponto e os botões */
+.ponto-info {
+    margin-bottom: 10px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.button-group button {
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+/* Tornar o layout responsivo para dispositivos móveis */
+@media (max-width: 768px) {
+    #pontoList li {
+        flex-direction: column;
+    }
+
+    .button-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .button-group button {
+        margin-bottom: 5px;
+        width: 100%; /* Botões ocupam a largura total em telas pequenas */
+    }
+}
+
+/* Estilo para o formulário */
+.form-group label {
+    font-weight: bold;
+}
+
+input.form-control {
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 16px;
+}

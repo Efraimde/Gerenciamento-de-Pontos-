@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Pontos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Gerenciador de Pontos</h1>
+        <form id="pontoForm" class="mb-4">
+            <input type="hidden" id="pontoId">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="nomePonto">Nome do Ponto</label>
+                    <input type="text" class="form-control" id="nomePonto" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="status">Status</label>
+                    <input type="text" class="form-control" id="status" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="nomeFuncionario">Nome do Funcionário</label>
+                    <input type="text" class="form-control" id="nomeFuncionario" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="horarioEntrada">Horário de Entrada</label>
+                    <input type="time" class="form-control" id="horarioEntrada" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="horarioSaida">Horário de Saída</label>
+                    <input type="time" class="form-control" id="horarioSaida" required>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-success">Adicionar Ponto</button>
+        </form>
+        
+        <h2>Pontos Adicionados</h2>
+        <ul id="pontoList" class="list-group">
+            <!-- Aqui irão os itens de ponto adicionados -->
+        </ul>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
